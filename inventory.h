@@ -9,11 +9,11 @@ private:
     std::vector<Book> books;
 
 public:
-    void addBook(const Book& book);
+    bool addBook(const Book& book);  // Changed to bool return
     void displayInventory();
     void searchBook(const std::string& title);
     void updateBook(const std::string& ISBN, int newQuantity);
-    void removeBook(const std::string& ISBN);
+    bool removeBook(const std::string& ISBN);  // Changed to bool return
 };
 
 #endif // INVENTORY_H
